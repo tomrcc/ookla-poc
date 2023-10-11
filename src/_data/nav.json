@@ -1,0 +1,103 @@
+{
+  "logo": "/images/logo.svg",
+  "items": [
+    {
+      "text": "Analysis",
+      "link": "/analysis/",
+      "enable_dropdown": true,
+      "dropdown": [
+        {
+          "dropdown_text": "Articles",
+          "dropdown_link": "/blog"
+        },
+        {
+          "dropdown_text": "Ookla Market Reports",
+          "dropdown_link": "/tags/marketing/"
+        },
+        {
+          "dropdown_text": "Speedtest Global Index",
+          "dropdown_link": "/tags/technology/"
+        },
+        {
+          "dropdown_text": "Ookla 5g Map",
+          "dropdown_link": "/tags/map/"
+        }
+      ]
+    },
+    {
+      "text": "Resources",
+      "link": "/resources/",
+      "enable_dropdown": true,
+      "dropdown": [
+        {
+          "dropdown_text": "All",
+          "dropdown_link": "/resources"
+        },
+        {
+          "dropdown_text": "Case Studies",
+          "dropdown_link": "/resources/case-studies/"
+        },
+        {
+          "dropdown_text": "Guides",
+          "dropdown_link": "/resources/guides/"
+        },
+        {
+          "dropdown_text": "Videos",
+          "dropdown_link": "/resources/videos/"
+        },
+        {
+          "dropdown_text": "Webinars",
+          "dropdown_link": "/resources/webinars/"
+        },
+        {
+          "dropdown_text": "White Papers",
+          "dropdown_link": "/resources/white-papers/"
+        }
+      ]
+    },
+    {
+      "text": "Enterprise",
+      "link": "/enterprise/",
+      "enable_dropdown": true,
+      "dropdown": [
+        {
+          "dropdown_text": "All",
+          "dropdown_link": "/enterprise/"
+        }
+      ]
+    },
+    {
+      "text": "Consumer",
+      "link": "/consumer/",
+      "enable_dropdown": false,
+      "dropdown": []
+    },
+    {
+      "text": "Brands",
+      "link": "/brands/",
+      "enable_dropdown": true,
+      "dropdown": [
+        {
+          "dropdown_text": "All",
+          "dropdown_link": "/brands/"
+        }
+      ]
+    },
+    {
+      "text": "About",
+      "link": "/about/",
+      "enable_dropdown": true,
+      "dropdown": [
+        {
+          "dropdown_text": "All",
+          "dropdown_link": "/about/"
+        }
+      ]
+    }
+  ],
+  "enable_nav_btn": true,
+  "nav_btn": {
+    "text": "Login",
+    "link": "/signup/"
+  }
+}
