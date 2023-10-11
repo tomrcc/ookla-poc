@@ -8,8 +8,8 @@ module.exports = function (eleventyConfig) {
 
   // What gets passed through to the built site
   eleventyConfig.ignores.add("src/schemas");
-  eleventyConfig.addPassthroughCopy("src/css");
-  eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("images");
 
   // Bookshop integration
   eleventyConfig.addPlugin(pluginBookshop({
