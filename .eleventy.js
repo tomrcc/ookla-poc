@@ -7,13 +7,13 @@ module.exports = function (eleventyConfig) {
 	});
 
   // What gets passed through to the built site
-  eleventyConfig.ignores.add("site/schemas");
-  eleventyConfig.addPassthroughCopy("site/css");
-  eleventyConfig.addPassthroughCopy("site/images");
+  eleventyConfig.ignores.add("src/schemas");
+  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/images");
 
   // Bookshop integration
   eleventyConfig.addPlugin(pluginBookshop({
-    bookshopLocations: ["_component-library"],  
+    bookshopLocations: ["component-library"],  
     pathPrefix: '', 
   }));
 

@@ -1,0 +1,54 @@
+.shared-bg-hero {
+  position: relative;
+  padding-block: 120px 115px;
+  min-height: 50vh;
+  text-align: center;
+
+  &__svg-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    right: 0;
+    left: 0px;
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 10;
+  }
+
+  h1,
+  p {
+    color: inherit;
+  }
+
+  h1 {
+    max-width: 780px;
+    margin-top: 60px;
+    margin-bottom: 64px;
+    margin-inline: auto;
+    font-size: 3.75rem;
+  }
+  
+  p,
+  a {
+    font-size: 1rem;
+    @media screen and (min-width: 1020px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  p {
+    overflow-wrap: break-word;
+    max-width: 870px;
+    margin-inline: auto;
+    margin-bottom: 32px;
+    line-height: 1.7rem;
+    letter-spacing: 1px;
+    font-weight: lighter;
+  }
+}
