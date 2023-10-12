@@ -7,6 +7,10 @@
   align-items: center;
   overflow: hidden;
 
+  @media screen and (min-width: 600px) {
+    padding-inline: 24px;
+  }
+
   @media screen and (min-width: 1020px) {
     padding-inline: 150px;
   }
@@ -42,16 +46,15 @@
   
   &__text {
     @media screen and (min-width: 1020px) {
-      min-width: 620px;
+      min-width: 50%;
     }
   }
 
   &__img {
-    max-width: 100%;
+    max-width: 620px;
 
     @media screen and (min-width: 1020px) {
-      width: 50%;
-      translate: 36px 24px;
+      translate: 42px 24px;
     }
   }
 
