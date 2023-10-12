@@ -32,23 +32,20 @@
     margin-bottom: 64px;
     margin-inline: auto;
     font-size: 3.75rem;
-  }
-  
-  p,
-  a {
-    font-size: 1rem;
-    @media screen and (min-width: 1020px) {
-      font-size: 1.25rem;
-    }
+    font-weight: bold;
   }
 
   p {
     overflow-wrap: break-word;
     max-width: 870px;
     margin-inline: auto;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
     line-height: 1.7rem;
     letter-spacing: 1px;
     font-weight: lighter;
+
+    @media screen and (min-width: 1020px) {
+      font-size: 1.25rem;
+    }
   }
 }

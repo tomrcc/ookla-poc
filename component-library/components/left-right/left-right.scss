@@ -3,7 +3,7 @@
   z-index: 10;
   display: flex;
   padding-inline: 2rem;
-  min-height: 100vh;
+  padding-block: 96px;
   align-items: center;
   overflow: hidden;
 
@@ -74,14 +74,6 @@
     }
   }
 
-  p,
-  a {
-    font-size: 1rem;
-    @media only screen and (min-width: 1020px) {
-      font-size: 1.25rem;
-    }
-  }
-
   p {
     font-family: $font-secondary;
     font-weight: lighter;
@@ -91,5 +83,9 @@
     margin-bottom: 60px;
     line-height: 1.7rem;
     letter-spacing: 1px;
+
+    @media only screen and (min-width: 1020px) {
+      font-size: 1.25rem;
+    }
   }
 }
