@@ -1,6 +1,7 @@
 .shared-bg-hero {
   position: relative;
   padding-block: 120px 115px;
+  padding-inline: $base-padding;
   min-height: 50vh;
   text-align: center;
 
@@ -27,7 +28,7 @@
   }
 
   h1 {
-    max-width: 780px;
+    max-width: $max-width-sm;
     margin-top: 60px;
     margin-bottom: 64px;
     margin-inline: auto;
