@@ -1,86 +1,90 @@
+{% assign c = 'navigation' %}
+
 <header>
-  <nav>
-    <div class="container">
+  <nav class="{{ c }}">
+    <div class="{{ c }}__container">
       <!-- Logo -->
-      <a class="navbar-logo" href="/">
+      <a class="{{ c }}__logo" href="/">
           <img src="{{ nav.logo }}" alt="Nav-Logo" />
       </a>
-      <!-- Hamburger -->
-      <button>
-        <span class="navbar-toggler-default">
-          <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <line
-                x1="3.5"
-                y1="5.5"
-                x2="21.5"
-                y2="5.5"
-                stroke="#292D32"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <line
-                x1="4.5"
-                y1="12.5"
-                x2="21.5"
-                y2="12.5"
-                stroke="#292D32"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <line
-                x1="11.5"
-                y1="19.5"
-                x2="21.5"
-                y2="19.5"
-                stroke="#292D32"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-          </svg>
-        </span>
-        <span class="navbar-toggler-toggled">
-          <svg
-              width="20"
-              height="20"
-              viewBox="0 0 28 28"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-          >
-              <path
-                d="M21.5 6.5L6.5 21.5"
-                stroke="#404152"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M21.5 21.5L6.5 6.5"
-                stroke="#404152"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-          </svg>
-        </span>
-      </button>
-      <div>
-        <ul class="navbar-nav">
+      <div class="{{ c }}__nav" x-data="{ open: false }">
+        <!-- Hamburger -->
+        <button x-on:click="open = ! open" class="{{ c }}__hamburger">
+          <span x-show="!open" class="navbar-toggler-default">
+            <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <line
+                  x1="3.5"
+                  y1="5.5"
+                  x2="21.5"
+                  y2="5.5"
+                  stroke="#292D32"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <line
+                  x1="4.5"
+                  y1="12.5"
+                  x2="21.5"
+                  y2="12.5"
+                  stroke="#292D32"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <line
+                  x1="11.5"
+                  y1="19.5"
+                  x2="21.5"
+                  y2="19.5"
+                  stroke="#292D32"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+            </svg>
+          </span>
+          <span x-show="open" class="navbar-toggler-toggled">
+            <svg
+                width="20"
+                height="20"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                  d="M21.5 6.5L6.5 21.5"
+                  stroke="#404152"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21.5 21.5L6.5 6.5"
+                  stroke="#404152"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+            </svg>
+          </span>
+        </button>
+        <ul class="{{ c }}__nav-list-mobile" x-show="open" x-cloak x-transition>
           {% for item in nav.items %}
             {% assign url = item.link %}
-            <li class="nav-item dropdown">
+            <li>
               {% if item.enable_dropdown and item.dropdown %}
                 <a
-                class="nav-link dropdown-link {% if page.url == url%}active{% endif %}"
-                href="{{ item.link }}"
-                >{{ item.text }}</a>
+                  class="nav-link dropdown-link {% if page.url == url%}active{% endif %}"
+                  href="{{ item.link }}">
+                  {{ item.text }}
+                </a>
+                <!-- 
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   {% for dropdown_item in item.dropdown %}
                   <li>
@@ -88,6 +92,33 @@
                   </li>
                   {% endfor %}
                 </ul>
+              -->
+              {% else %}
+                <a class="nav-link {% if page.url == url%}active{% endif %}" href="{{ item.link }}">{{ item.text }}</a>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+        <ul class="{{ c }}__nav-list">
+          {% for item in nav.items %}
+            {% assign url = item.link %}
+            <li class="{{ c }}__nav-list-item">
+              {% if item.enable_dropdown and item.dropdown %}
+                <a
+                  class="nav-link dropdown-link {% if page.url == url%}active{% endif %}"
+                  href="{{ item.link }}">
+                  {{ item.text }}
+                </a>
+                <img src="/images/ic_caret.svg" alt="Dropdown Icon">
+                <!-- 
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  {% for dropdown_item in item.dropdown %}
+                  <li>
+                    <a class="dropdown-item" href="{{ dropdown_item.dropdown_link }}">{{ dropdown_item.dropdown_text }}</a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              -->
               {% else %}
                 <a class="nav-link {% if page.url == url%}active{% endif %}" href="{{ item.link }}">{{ item.text }}</a>
               {% endif %}

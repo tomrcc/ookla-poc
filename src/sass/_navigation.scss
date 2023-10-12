@@ -1,0 +1,88 @@
+.navigation {
+  position: relative;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: $base-padding;
+
+    @media screen and (min-width: $page-max-width) {
+      padding: 64px 157px;
+    }
+  }
+
+  &__logo {
+    img {
+      width: 108px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-list {
+    display: none;
+
+    @media screen and (min-width: $page-max-width) {
+      position: static;
+      display: flex;
+      padding: 0;
+
+      li {
+        margin-bottom: 0;
+        margin-left: 2rem;
+      }
+
+      a {
+        font-size: 1.25rem;
+        letter-spacing: 0.5px;
+        font-weight: lighter;
+      }
+    }
+  }
+
+  &__nav-list-item {
+    display: flex;
+
+    img {
+      width: .9rem;
+      margin-left: .5rem;
+    }
+  }
+
+  &__nav-list-mobile {
+    position: absolute;
+    z-index: 99;
+    top: 76px;
+    right: 0;
+    left: 0;
+
+    width: 100%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0 0 0 4px;
+    font-family: $font-primary;
+    letter-spacing: 1.2;
+    color: text;
+
+    li {
+      margin-bottom: .5rem;
+    }
+
+    @media screen and (min-width: $page-max-width) {
+      display: none !important;
+    }
+  }
+
+  &__hamburger {
+    display: block;
+    border: none;
+    background: none;
+
+    @media screen and (min-width: $page-max-width) {
+      display: none;
+    }
+  }
+}
