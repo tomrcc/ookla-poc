@@ -38,14 +38,14 @@
 
   p {
     overflow-wrap: break-word;
-    max-width: 870px;
+    max-width: $max-width-md;
     margin-inline: auto;
     margin-bottom: 64px;
     line-height: 1.7rem;
     letter-spacing: 1px;
     font-weight: lighter;
 
-    @media screen and (min-width: 1020px) {
+    @media screen and (min-width: $max-width-lg) {
       font-size: 1.25rem;
     }
   }
