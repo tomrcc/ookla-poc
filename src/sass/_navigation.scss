@@ -1,10 +1,12 @@
 .navigation {
   position: relative;
+
   &__container {
     display: flex;
     justify-content: space-between;
-
     padding: $base-padding;
+    max-width: 120rem;
+    margin: 0 auto;
 
     @media screen and (min-width: $page-max-width) {
       padding: 64px 157px;
