@@ -1,15 +1,11 @@
 {% assign c = 'button' %}
 
-<style>
-  .button:hover {
-    background-color: {{ button_hover_color }} !important;
-  }
-</style>
-
-<a 
-  class='{{ c }}' 
-  href='{{ path }}' 
-  style='background: {{ button_color }}; color: {{ button_text_color }};'
+<button class="{{ c }}" style="background-color: {{ button_color }};">
+  <a 
+  class='{{ c }}__link' 
+  href='{{ path }}'
+  style="color: {{ button_text_color }};"
   >
     {{ button_text }}
-</a>
+  </a>
+</button>
