@@ -2,10 +2,10 @@
 spec:
   structures:
     - content_blocks
-  label: Home Left Right
-  description: Home Left Right block
-  icon: 'cottage'
-  tags: ['left-right']
+  label: Left-Right Block
+  description: Left-Right block with heading, text & button next to image.
+  icon: 'chrome_reader_mode'
+  tags: ['block', 'left-right']
 
 # Defines the structure of this component, as well as the default values
 blueprint:

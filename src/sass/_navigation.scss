@@ -1,12 +1,14 @@
 .navigation {
   position: relative;
+
   &__container {
     display: flex;
     justify-content: space-between;
-
     padding: $base-padding;
+    max-width: $max-width-xxl;
+    margin: 0 auto;
 
-    @media screen and (min-width: $page-max-width) {
+    @media screen and (min-width: $max-width-xl) {
       padding: 64px 157px;
     }
   }
@@ -25,7 +27,7 @@
   &__nav-list {
     display: none;
 
-    @media screen and (min-width: $page-max-width) {
+    @media screen and (min-width: $max-width-xl) {
       position: static;
       display: flex;
       padding: 0;
@@ -71,7 +73,7 @@
       margin-bottom: .5rem;
     }
 
-    @media screen and (min-width: $page-max-width) {
+    @media screen and (min-width: $max-width-xl) {
       display: none !important;
     }
   }
@@ -81,7 +83,7 @@
     border: none;
     background: none;
 
-    @media screen and (min-width: $page-max-width) {
+    @media screen and (min-width: $max-width-xl) {
       display: none;
     }
   }

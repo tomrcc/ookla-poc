@@ -45,7 +45,12 @@ $base-padding: 1rem;
 $base-margin: 1rem;
 
 // Page Container Variables
-$page-max-width: 1028px;
+$max-width-xs: 620px;
+$max-width-sm: 780px;
+$max-width-md: 870px;
+$max-width-lg: 1028px;
+$max-width-xl: 1280px;
+$max-width-xxl: 1920px;
 
 // Transition Variables
 $base-transition: all 0.5s ease-in-out;
