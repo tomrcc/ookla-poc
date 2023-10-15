@@ -3,7 +3,7 @@
   "items": [
     {
       "text": "Analysis",
-      "link": "/analysis/",
+      "link": "/blog/",
       "enable_dropdown": true,
       "dropdown": [
         {

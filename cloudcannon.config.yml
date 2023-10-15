@@ -70,9 +70,9 @@ collection_groups:
   - heading: Pages
     collections:
       - pages
-  # - heading: Blogging
-  #   collections:
-  #     - blog
+  - heading: Blogging
+    collections:
+      - blog
   - heading: Site Settings
     collections:
       - data

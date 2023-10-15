@@ -1,7 +1,7 @@
 ---
 date: 2022-03-07
 title: Best email sending services
-layout: blog-article.html
+layout: layouts/blog-article.html
 tags:
   - technology
   - blog

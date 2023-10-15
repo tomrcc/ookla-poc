@@ -9,7 +9,7 @@ seo:
   author_twitter_handle:
   open_graph_type: article
   no_index: false
-layout: blog-article.html
+layout: layouts/blog-article.html
 tags:
   - marketing
   - blog

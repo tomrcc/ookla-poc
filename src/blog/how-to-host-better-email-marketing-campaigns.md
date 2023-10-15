@@ -1,7 +1,7 @@
 ---
 date: 2022-03-07
 title: How to host better email marketing campaigns?
-layout: blog-article.html
+layout: layouts/blog-article.html
 tags:
   - marketing
   - blog

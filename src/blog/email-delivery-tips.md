@@ -1,7 +1,7 @@
 ---
 date: 2022-03-07
 title: Email delivery tips
-layout: blog-article.html
+layout: layouts/blog-article.html
 tags:
   - email
   - blog

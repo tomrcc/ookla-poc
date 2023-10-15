@@ -1,7 +1,7 @@
 ---
 date: 2022-04-14
 title: 7 things you didn't know about email
-layout: blog-article.html
+layout: layouts/blog-article.html
 tags:
   - marketing
   - blog
