@@ -53,6 +53,7 @@
 
   &__img {
     margin-top: 32px;
+    max-width: 618px;
 
     @media only screen and (min-width: $max-width-lg) {
       max-width: 50%;

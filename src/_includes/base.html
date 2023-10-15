@@ -3,12 +3,6 @@
   {% include './head.html' %}
   <body>
     {% include './nav.html' %}
-    <main class="main-page-container">
-      <!-- BG image -->
-      {{ if background_image }}
-        <img class="main-page-container__bg-img" src="{{ background_image }}" alt="" />
-      {{ end }}
-      {% bookshop_include "page" content_blocks: content_blocks %}
-    </main>
+    {{ content }}
   </body>
 </html>
