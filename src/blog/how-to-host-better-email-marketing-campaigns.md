@@ -1,7 +1,7 @@
 ---
 date: 2022-03-07
 title: How to host better email marketing campaigns?
-layout: layouts/blog-article.html
+layout: layouts/article.html
 tags:
   - marketing
   - blog
@@ -9,7 +9,7 @@ author: Arther Conal
 thumbImg:
   image: /images/blog/blog-thumb-2.jpg
   image_alt: People conversing
-featuredImg:
+featured_image:
   image: /images/blog/featured-image-2.jpg
   image_alt: Children looking at a computer
 seo:

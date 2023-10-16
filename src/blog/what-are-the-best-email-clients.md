@@ -1,7 +1,7 @@
 ---
 date: 2022-03-07
 title: What are the best email clients?
-layout: layouts/blog-article.html
+layout: layouts/article.html
 tags:
   - marketing
   - blog
@@ -9,7 +9,7 @@ author: Wendy Parkes
 thumbImg:
   image: /images/blog/blog-thumb-4.jpg
   image_alt: Group of people working
-featuredImg:
+featured_image:
   image: /images/blog/featured-image-4.jpg
   image_alt: Person drinking coffee
 seo:

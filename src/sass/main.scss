@@ -1,5 +1,8 @@
 @import 'variables';
 @import 'navigation';
+@import 'pagination';
+@import 'blog';
+@import 'article';
 
 html {
   box-sizing: border-box;
@@ -16,6 +19,15 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-weight: normal;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-primary;
+  line-height: 1;
+}
+
+p, ol, ul, a, span {
+  font-family: $font-secondary;
+}
+
 ol, ul {
   list-style: none;
 }
@@ -23,10 +35,6 @@ ol, ul {
 img {
   width: 100%;
   height: auto;
-}
-
-body {
-  font-family: sans-serif;
 }
 
 .main-page-container {

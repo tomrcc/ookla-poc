@@ -1,7 +1,7 @@
 ---
 date: 2022-03-07
 title: Email delivery tips
-layout: layouts/blog-article.html
+layout: layouts/article.html
 tags:
   - email
   - blog
@@ -9,7 +9,7 @@ author: Gerard Hopper
 thumbImg:
   image: /images/blog/blog-thumb-1.jpg
   image_alt: Arial shot of people working
-featuredImg:
+featured_image:
   image: /images/blog/featured-image-1.jpg
   image_alt: Child using a computer
 seo:

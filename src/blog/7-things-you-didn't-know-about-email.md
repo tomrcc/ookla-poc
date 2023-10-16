@@ -1,7 +1,7 @@
 ---
 date: 2022-04-14
 title: 7 things you didn't know about email
-layout: layouts/blog-article.html
+layout: layouts/article.html
 tags:
   - marketing
   - blog
@@ -9,7 +9,7 @@ author: Miyah Kelley
 thumbImg:
   image: /images/blog/blog-thumb-5.jpg
   image_alt: Group of people discussing something shwon on a laptop
-featuredImg:
+featured_image:
   image: /images/blog/featured-image-3.jpg
   image_alt: Person drinking coffee
 seo:

@@ -1,14 +1,20 @@
 const pluginBookshop = require("@bookshop/eleventy-bookshop");
+const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
-  // Hot reloading from scss changes
-  // TODO: Change to all _site
+  // Hot reloading for local dev
   eleventyConfig.setBrowserSyncConfig({
-		files: './_site/css/**/*.css'
+		files: './_site/**/*.*'
 	});
 
+  // Find the length of an array
   eleventyConfig.addFilter("length", (input) => {
     return input.length;
+  });
+
+  // Using Luxon for date formatting
+  eleventyConfig.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
 
   // What gets passed through to the built site
