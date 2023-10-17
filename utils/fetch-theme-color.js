@@ -10,13 +10,13 @@ fs.readFile('src/_data/theme.json', 'utf8', function(err, dataFile){
     // parse file to JSON so that the variables can be accessed
     dataFile = JSON.parse(dataFile);
 
-    const variablesFilesLocations = [
+    const variablesFileLocations = [
         'component-library/shared/styles/_variables.scss',
         'src/sass/_variables.scss'
     ]
 
-    for (let i = 0; i < variablesFilesLocations.length; i++) {
-        const path = variablesFilesLocations[i];
+    for (let i = 0; i < variablesFileLocations.length; i++) {
+        const path = variablesFileLocations[i];
         
         fs.readFile(path, 'utf-8', function (err, scssFile) {
 

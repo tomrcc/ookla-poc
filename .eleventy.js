@@ -7,6 +7,9 @@ module.exports = function (eleventyConfig) {
 		files: './_site/**/*.*'
 	});
 
+  // Display the current year
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
   // Find the length of an array
   eleventyConfig.addFilter("length", (input) => {
     return input.length;
