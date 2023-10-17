@@ -74,54 +74,21 @@
             </svg>
           </span>
         </button>
+        <!-- Mobile nav -->
         <ul class="{{ c }}__nav-list-mobile" x-show="open" x-cloak x-transition>
           {% for item in nav.items %}
             {% assign url = item.link %}
             <li>
-              {% if item.enable_dropdown and item.dropdown %}
-                <a
-                  class="nav-link dropdown-link {% if page.url == url%}active{% endif %}"
-                  href="{{ item.link }}">
-                  {{ item.text }}
-                </a>
-                <!-- 
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  {% for dropdown_item in item.dropdown %}
-                  <li>
-                    <a class="dropdown-item" href="{{ dropdown_item.dropdown_link }}">{{ dropdown_item.dropdown_text }}</a>
-                  </li>
-                  {% endfor %}
-                </ul>
-              -->
-              {% else %}
-                <a class="nav-link {% if page.url == url%}active{% endif %}" href="{{ item.link }}">{{ item.text }}</a>
-              {% endif %}
+              <a class="nav-link {% if page.url == url%}active{% endif %}" href="{{ item.link }}">{{ item.text }}</a>
             </li>
           {% endfor %}
         </ul>
+        <!-- Desktop nav -->
         <ul class="{{ c }}__nav-list">
           {% for item in nav.items %}
             {% assign url = item.link %}
             <li class="{{ c }}__nav-list-item">
-              {% if item.enable_dropdown and item.dropdown %}
-                <a
-                  class="nav-link dropdown-link {% if page.url == url%}active{% endif %}"
-                  href="{{ item.link }}">
-                  {{ item.text }}
-                </a>
-                <img src="/images/icons/ic_caret.svg" alt="Dropdown Icon">
-                <!-- 
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  {% for dropdown_item in item.dropdown %}
-                  <li>
-                    <a class="dropdown-item" href="{{ dropdown_item.dropdown_link }}">{{ dropdown_item.dropdown_text }}</a>
-                  </li>
-                  {% endfor %}
-                </ul>
-              -->
-              {% else %}
-                <a class="nav-link {% if page.url == url%}active{% endif %}" href="{{ item.link }}">{{ item.text }}</a>
-              {% endif %}
+              <a class="nav-link {% if page.url == url%}active{% endif %}" href="{{ item.link }}">{{ item.text }}</a>
             </li>
           {% endfor %}
         </ul>

@@ -1,11 +1,10 @@
 {
     "BaseURL": "http://example.org",
     "site_title": "Ookla",
-    "favicon_icon": "/images/favicon.ico",
-    "favicon_image": "/images/favicon.png",
-    "description": "A polished, marketing website template built with Eleventy",
-    "twitter_image": "/images/feature/feature-hero-two.png",
-    "twitter_site": "@twitter_site",
-    "image": "/images/feature/feature-hero.png"
-    
+    "favicon_icon": "/images/favicons/favicon.ico",
+    "favicon_image": "/images/favicons/favicon.png",
+    "description": "A barebones eleventy template, suitable for developers",
+    "twitter_image": "",
+    "twitter_site": "",
+    "image": ""
 }
