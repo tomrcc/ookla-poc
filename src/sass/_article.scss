@@ -1,5 +1,6 @@
 .article {
-  padding: $base-padding;
+  padding-inline: $base-padding;
+  padding-bottom: 64px;
   max-width: $max-width-md;
   margin-inline: auto;
 

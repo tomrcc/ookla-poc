@@ -9,6 +9,10 @@
     padding-block: 64px;
     max-width: $max-width-xxl;
     margin: 0 auto;
+  
+    @media screen and (min-width: $max-width-xl) {
+      padding-inline: 157px;
+    }
 
     @media screen and (min-width: $max-width-xl) {
       flex-direction: row;
