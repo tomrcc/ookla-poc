@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'navigation';
 @import 'pagination';
+@import '404';
 @import 'blog';
 @import 'article';
 
@@ -22,10 +23,12 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-primary;
   line-height: 1;
+  color: $color-text;
 }
 
 p, ol, ul, a, span {
   font-family: $font-secondary;
+  color: $color-text;
 }
 
 ol, ul {
@@ -40,7 +43,7 @@ img {
 .main-page-container {
   position: relative;
   min-height: 100vh;
-  color: white;
+  color: $color-text-white;
 
   &__bg-img {
     position: absolute;

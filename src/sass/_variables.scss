@@ -2,43 +2,29 @@
 $font-primary: 'Source Sans 3', sans-serif;
 $font-secondary: 'Roboto', sans-serif;
 $base-font-size: 1rem;
-$regular-font-weight: 400;
-$medium-font-weight: 500;
-$semibold-font-weight: 600;
-$bold-font-weight: 700;
-$extbold-font-weight: 800;
-$base-letter-spacing: 0.5px;
 
 //Colors Variables
-
 $color-white: #fff;
-$color-gray: #fcfcfc;
-$color-cyan: #808080;
-$color-cyan-dark: #f3f3f3;
-$color-cyan-light: #5f5f5f;
-//overwritten by site.json -> theme -> primary_color if set
-$color-primary: #e53b2a;
-$color-primary-light: #e6ebf4;
-$color-primary-dark: mix($color-primary, $color-white, 12%);
-$color-gray-light: mix($color-primary, $color-white, 2%);
-$color-gray-dark: mix($color-primary, $color-white, 6%);
-//overwritten by site.json -> theme -> secondary_color if set
-$color-secondary: #fffbf3;
-$color-secondary-light: mix($color-primary, $color-white, 16%);
-$color-secondary-dark: #f7f8fa;
-//overwritten by site.json -> theme -> anchor_color if set
+$color-black: #000;
+$color-gray: #808080;
+$color-gray-light: mix($color-gray, $color-white, 10%);
+$color-gray-dark: mix($color-gray, $color-black, 50%);
+$color-primary: #034AD8;
+$color-primary-light: mix($color-primary, $color-white, 10%);
+$color-primary-dark: mix($color-primary, $color-black, 50%);
+$color-secondary: #D9CFFF;
+$color-secondary-light: mix($color-secondary, $color-white, 10%);
+$color-secondary-dark: mix($color-secondary, $color-black, 50%);
 $color-anchor: #ffba08;
-$color-anchor-dark: mix($color-anchor, $color-white, 30%);
-//overwritten by site.json -> theme -> background_effects_color if set
-$color-background-effects: #faaa8f;
-
-$color-header: #000;
-$color-header-light: mix($color-anchor, $color-white, 4%);
-$color-header-dark: mix($color-anchor, $color-white, 12%);
-$color-text: #181512;
-$color-deactive: #ababab;
-$color-text-dark: #dddddd;
+$color-anchor-light: mix($color-anchor, $color-white, 10%);
+$color-anchor-dark: mix($color-anchor, $color-black, 50%);
+$color-header: #181512;
+$color-header-light: mix($color-anchor, $color-white, 10%);
+$color-header-dark: mix($color-anchor, $color-black, 50%);
+$color-text: #181222;
+$color-text-white: #dddddd;
 $color-text-light: #4d4d4d;
+$color-deactive: #ababab;
 
 // Spacer Variables
 $base-padding: 1rem;
