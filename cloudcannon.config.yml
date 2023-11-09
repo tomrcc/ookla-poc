@@ -40,6 +40,9 @@ collections_config:
         - nav.json
         - footer.json
         - theme.json
+  images:
+    output: true
+    path: images
   site_navigation:
     output: true
     path: _data
@@ -73,6 +76,9 @@ collection_groups:
   - heading: Blogging
     collections:
       - blog
+  - heading: Media
+    collections:
+      - images
   - heading: Site Settings
     collections:
       - data
