@@ -43,6 +43,10 @@ collections_config:
   images:
     output: true
     path: images
+    _enabled_editors:
+      - data
+    filter:
+      base: all
   site_navigation:
     output: true
     path: _data
